@@ -1,0 +1,67 @@
+.header {
+  background-color: #8B4513;
+  color: #FFD700;
+  font-family: 'Georgia', serif;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 5px solid #FF4500;
+}
+
+.navigation {
+  background-color: #D2B48C;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.section {
+  background-color: #F5DEB3;
+  color: #000;
+  padding: 20px;
+  margin: 15px 0;
+  border: 2px solid #8B4513;
+}
+
+.feature-card {
+  background-color: #FFE4B5;
+  padding: 10px;
+  border: 2px solid #FF4500;
+  margin: 10px;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+.rules {
+  background-color: #FFD700;
+  padding: 15px;
+  border: 2px dashed #8B4513;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contacts {
+  background-color: #D2691E;
+  padding: 15px;
+  color: #FFF;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.footer {
+  background-color: #8B4513;
+  color: #FFD700;
+  text-align: center;
+  padding: 10px;
+  border-top: 5px solid #FF4500;
+}
+
+@font-face {
+  font-family: 'CowboyFont';
+  src: url('path-to-your-cowboy-font.woff2') format('woff2');
+}
+
+body {
+  font-family: 'CowboyFont', serif;
+  background-image: url('path-to-your-saloon-background.jpg');
+  background-size: cover;
+  color: #333;
+}
