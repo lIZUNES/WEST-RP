@@ -3,36 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wild West Experience</title>
+    <title>Wild West Adventure</title>
     <style>
         body {
-            background-color: #1f1f1f;
-            color: #e5e5e5;
-            font-family: 'Courier New', Courier, monospace;
-            text-align: center;
             margin: 0;
-            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background-color: #000;
+            overflow-x: hidden;
         }
-        h1 {
-            margin-top: 50px;
-            font-size: 4em;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        header {
+            position: relative;
+            height: 100vh;
+            background: url('video_background.mp4') no-repeat center center/cover;
         }
-        p {
-            font-size: 1.5em;
-            margin: 20px;
+        .hero {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            text-align: center;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
+        section {
+            padding: 100px 20px;
+        }
+        .story {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .features {
+            background: #222;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 30%;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to the Wild West</h1>
-        <p>Experience adventure and storytelling in an atmospheric world.</p>
-    </div>
+    <header>
+        <div class="hero">
+            <h1>Welcome to the Wild West</h1>
+            <p>Your adventure starts here!</p>
+        </div>
+    </header>
+    <section class="story">
+        <h2>Our Story</h2>
+        <p>Experience the untamed wild frontier...</p>
+    </section>
+    <section class="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Immersive experiences</li>
+            <li>Dynamic environments</li>
+            <li>Rich storytelling</li>
+        </ul>
+    </section>
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <img src="image1.jpg" alt="Wild West Scene 1">
+        <img src="image2.jpg" alt="Wild West Scene 2">
+        <img src="image3.jpg" alt="Wild West Scene 3">
+    </section>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 </body>
 </html>
